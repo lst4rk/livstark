@@ -772,6 +772,10 @@ input, select, textarea {
 			padding-left: 0.5em;
 		}
 
+		.noPADDINGLEFT {
+			padding-left: auto !important;
+		}
+
 		ul.alt {
 			list-style: none;
 			padding-left: 0;
@@ -803,11 +807,16 @@ input, select, textarea {
 
 /* Actions */
 
+		ul.actions div {
+			display: flex;
+		}
+
 	ul.actions {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		justify-content: space-between;
 		cursor: default;
 		list-style: none;
 		margin-left: -1rem;
@@ -1888,3 +1897,22 @@ Splah
 		body.is-preload #footer {
 			opacity: 0;
 		}
+
+
+.contactLinks {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	flex: row nowrap;
+	gap: 30px;
+	align-items: stretch;
+}
+
+.contactLinks a {
+	border-radius: 10px;
+	border: 1px solid white;
+	/* height: 40px;
+	width: 40px; */
+	/* line-height: calc(3.75rem - 2px); */
+	padding: 10px 12px !important;
+}
