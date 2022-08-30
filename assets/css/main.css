@@ -148,10 +148,10 @@ input, select, textarea {
 	}
 
 	a {
-		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		/* -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out; */
 		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
 		text-decoration: none;
 		color: inherit;
@@ -1166,10 +1166,10 @@ input, select, textarea {
 			-webkit-transition: background-color 2.5s ease-in-out;
 			-ms-transition: background-color 2.5s ease-in-out;
 			transition: background-color 2.5s ease-in-out;
-			-moz-transition-delay: 0.75s;
+			/* -moz-transition-delay: 0.75s;
 			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s; */
+			/* transition-delay: 0.75s; */
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
 			background-size: auto,
  256px 256px;
@@ -1185,10 +1185,10 @@ input, select, textarea {
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
 			transform: scale(1.125);
-			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
+			/* -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
-			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
+			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out; */
 			background-image: url("../../images/clouds.jpg");
 			background-position: bottom;
 			background-size: cover;
@@ -1207,9 +1207,9 @@ input, select, textarea {
 			filter: blur(0.2rem);
 		}
 
-		body.is-preload #bg:before {
+		/* body.is-preload #bg:before {
 			background-color: #000000;
-		}
+		} */
 
 /* Wrapper */
 
@@ -1266,8 +1266,8 @@ input, select, textarea {
 
 		}
 
-
-/* Splah */
+/* 
+Splah
 
 	.splash {
 		background: black;
@@ -1288,23 +1288,23 @@ input, select, textarea {
 
 	.splash p {
 		/* flex-basis: 100%; */
-		font-size: 4rem;
-		display: flex;
+		/* font-size: 4rem;
+		display: flex; */
 		/* position: absolute;
 		top: 50%;
 		left: 25%; */
-	}
+	/* } */
 
 	/* #helloMessage {
 		flex-basis: 100%;
 	} */
 
-	#helloMessage::after {
-		content: '';
+	/* #helloMessage::after {
+		content: ''; */
 		/* position: absolute;
 		top: 50%;
 		left: 25%; */
-		display: inline-block;
+		/* display: inline-block;
 		background-color: transparent;
 		width: 1.6rem;
 		height: 5rem;
@@ -1313,7 +1313,7 @@ input, select, textarea {
 		-webkit-animation: blink .4s step-end infinite;
 		animation: blink .4s step-end infinite;
 		animation-delay: -1s;
-	}
+	} */
 
 	/* #nameQuestion::after {
 		content: '';
@@ -1331,7 +1331,7 @@ input, select, textarea {
 	} */
 
 
-	@-webkit-keyframes blink {
+	/* @-webkit-keyframes blink {
 		0% { opacity: 0.0; }
 		50% { opacity: 1.0; }
 		100% { opacity: 1.0; }
@@ -1368,7 +1368,7 @@ input, select, textarea {
 		opacity: 0;
 		animation: fadeIn 1s ease-in forwards;
 		animation-delay: 2s;
-	}
+	} */
 
 	/* .splash.isHidden {
 		background: black;
@@ -1385,7 +1385,7 @@ input, select, textarea {
 		transition: all 0.5s;
 	} */
 
-	.enter {
+	/* .enter {
 		display: block;
 		position: absolute;
 		top: 60%;
@@ -1394,7 +1394,7 @@ input, select, textarea {
 
 	.enter:hover {
 		background-color: #ec7fff;
-	}
+	} */
 
 
 /* Header */
@@ -1480,7 +1480,7 @@ input, select, textarea {
 				-moz-transition-delay: .4s;
 				-webkit-transition-delay: .4s;
 				-ms-transition-delay: .4s;
-				transition-delay:.4s;
+				transition-delay:.5s;
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
@@ -1738,7 +1738,7 @@ input, select, textarea {
 			padding: 5.5rem 3.5rem 2.5rem 3.5rem ;
 			position: relative;
 			width: 120rem;;
-			max-width: 100%;
+			max-width: 80%;
 			background-color: rgba(229, 209, 196, 0.5);
 			border-radius: 4px;
 			opacity: 0;
@@ -1837,7 +1837,7 @@ input, select, textarea {
 		}
 
 		#work a {
-			opacity: 0.7;
+			opacity: 0.9;
 			transition: 0.5s;
 		}
 

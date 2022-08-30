@@ -400,70 +400,70 @@
 
 })(jQuery);
 
-// Splash page
-	const splash = document.querySelector(".splash");
+// // Splash page
+// 	const splash = document.querySelector(".splash");
 	
-	// singling out parts of the DOM
-	let helloMessageInDOM = document.getElementById("helloMessage");
-	let nameQuestionInDOM = document.getElementById("nameQuestion");
+// 	// singling out parts of the DOM
+// 	let helloMessageInDOM = document.getElementById("helloMessage");
+// 	let nameQuestionInDOM = document.getElementById("nameQuestion");
 
 
-	// on submit or click of "go to site", hide the splash
+// 	// on submit or click of "go to site", hide the splash
 
-	document.querySelector("#enterButton").addEventListener('click', openSite);
+// 	document.querySelector("#enterButton").addEventListener('click', openSite);
 
-	function openSite() {
-		splash.classList.add('fade-Out');
-	}
+// 	function openSite() {
+// 		splash.classList.add('fade-Out');
+// 	}
 
-	// Typing effect
-	let i = 0;
-	let speed = 170;
+// 	// Typing effect
+// 	let i = 0;
+// 	let speed = 170;
 
-	typeWriter = (message, placeToPut) => {
-		if (i < message.length) {
-			setTimeout(typeWriter, speed, message, placeToPut);
-			placeToPut.innerHTML += message.charAt(i);
-			i++;
-		}
-	}
+// 	typeWriter = (message, placeToPut) => {
+// 		if (i < message.length) {
+// 			setTimeout(typeWriter, speed, message, placeToPut);
+// 			placeToPut.innerHTML += message.charAt(i);
+// 			i++;
+// 		}
+// 	}
 
-	document.addEventListener('DOMContentLoaded', intro());
+// 	document.addEventListener('DOMContentLoaded', intro());
 
-	// upon load-up
-	function intro() {
+// 	// upon load-up
+// 	function intro() {
 		
-		flashTimer();
+// 		flashTimer();
 
-		// wait to start intro hello message
-		function flashTimer() {
-			setTimeout(helloMessage, 1000);
-		}
+// 		// wait to start intro hello message
+// 		function flashTimer() {
+// 			setTimeout(helloMessage, 1000);
+// 		}
 		
-		// say hello and ask user their name
-		function helloMessage() {
-			typeWriter('Hello :)', helloMessageInDOM);
-			// helloMessageInDOM.innerHTML += "<br>";
-		}
+// 		// say hello and ask user their name
+// 		function helloMessage() {
+// 			typeWriter('Hello :)', helloMessageInDOM);
+// 			// helloMessageInDOM.innerHTML += "<br>";
+// 		}
 
-	}
-
-
-	// ask user's name
-	function askName() {
-		typeWriter('<br/><br/>What is your name?', nameQuestionInDOM);
-	}
+// 	}
 
 
+// 	// ask user's name
+// 	function askName() {
+// 		typeWriter('<br/><br/>What is your name?', nameQuestionInDOM);
+// 	}
 
 
-	// get the name of the user
-	// name question fades away, cursor deletes "there" and types in name instead
+
+
+// 	// get the name of the user
+// 	// name question fades away, cursor deletes "there" and types in name instead
 
 	
 	
 
-	// for (let i = 0; i < message.length; i++) {
-	// 	setTimeout(typeWriter, speed, message, placeToPut);
-	// 	placeToPut.innerHTML += message.charAt(i);
-	// }
+// 	// for (let i = 0; i < message.length; i++) {
+// 	// 	setTimeout(typeWriter, speed, message, placeToPut);
+// 	// 	placeToPut.innerHTML += message.charAt(i);
+// 	// }
