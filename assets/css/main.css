@@ -1832,7 +1832,7 @@ Splah
 	#work section {
 		float: left;
 		/* width: 33.333% */
-		width: 50%;
+		/* width: 50%; */
 		padding: 10px 20px;
 	}
 		#work img {
